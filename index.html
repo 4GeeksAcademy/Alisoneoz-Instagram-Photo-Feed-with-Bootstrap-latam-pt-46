@@ -15,12 +15,12 @@
 
         <!-- Nav-Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid row">
-                <div class="container col-9 d-flex align-items-center gap-1">
-                    <i class="fa-brands fa-instagram"></i>
-                    <h4>Instagram</h4>
+            <div class="container-fluid d-flex row">
+                <div class="col-9 container d-flex align-items-center gap-1 m-0">
+                    <i class="fa-brands fa-instagram fs-5"></i>
+                    <h6 class="m-0">Instagram</h6>
                 </div>
-                <div class="col-3">
+                <div class="d-flex justify-content-end col-3">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -54,8 +54,7 @@
                                                     <textarea class="form-control" placeholder="Leave a comment here"
                                                         id="floatingTextarea"></textarea>
                                                     <label for="floatingTextarea" class="text-secondary">Add the caption
-                                                        of
-                                                        your post here</label>
+                                                        of your post here</label>
                                                 </div>
                                                 <div class="container mx-0 my-1 px-0">
                                                     <button class="btn btn-light border">
@@ -104,16 +103,16 @@
         <!-- Body -->
 
         <!-- Navigation of the tabs -->
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="home" aria-selected="true">
+        <ul class="nav nav-tabs justify-content-center border-0 p-2" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation border-0">
+                <button class="nav-link active border-0"" id=" home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">
                     <i class="fa-solid fa-table-cells"></i>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">
+                <button class="nav-link border-0"" id=" profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">
                     <i class="fa-solid fa-square"></i>
                 </button>
             </li>
@@ -123,34 +122,68 @@
         <!-- Contents of the tabs -->
         <div class="tab-content" id="myTabContent">
             <!-- Grid view -->
-            <div class="tab-pane fade show active row " id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="col-3 mx-auto d-flex justify-content-center">
-                    <img src="https://picsum.photos/200" class="img-thumbnail mx-auto">
-                    <img src="https://picsum.photos/200" class="img-thumbnail mx-auto">
-                    <img src="https://picsum.photos/200" class="img-thumbnail mx-auto">
+            <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row py-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
                 </div>
-                <div class="col-3 d-flex mx-auto d-flex justify-content-center">
-                    <img src="https://picsum.photos/200" class="img-thumbnail">
-                    <img src="https://picsum.photos/200" class="img-thumbnail">
-                    <img src="https://picsum.photos/200" class="img-thumbnail">
+                <div class="row py-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                </div>
+                <div class="row ">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
+                    <img src="https://picsum.photos/200" class="img-fluid col-4 px-1">
                 </div>
 
-                <div class="col-3 d-flex mx-auto d-flex justify-content-center">
-                    <img src="https://picsum.photos/200" class="img-thumbnail">
-                    <img src="https://picsum.photos/200" class="img-thumbnail">
-                    <img src="https://picsum.photos/200" class="img-thumbnail">
-                </div>
+
             </div>
 
             <!-- Single view -->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container">
-                    <div class="row">
-                        <div class="mx-auto border col-4 d-flex flex-column p-0 m-0">
-                            <h5>My Crazy dog is barking</h5>
-                            <img src="https://picsum.photos/200" class="fluid  p-0 m-0">
-                            <p class="fw-bold">204 likes</p>
-                            <p>Lorem ipsum dolor sit amet</p>
+                    <div class="row d-flex flex-column align-items-center gap-3 mb-2">
+                        <div class="col-3 border px-0 rounded ">
+                            <div class="d-flex justify-content-between py-2 align-items-center px-2">
+                                <h6 class="m-0">My Crazy dog is barking</h6>
+                                <p class=" m-0">09/04</p>
+                            </div>
+
+                            <img src="https://picsum.photos/400" class="img-fluid">
+                            <div class="p-2">
+                                <p class="fw-bold my-0">7000 likes</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3 border px-0 rounded">
+                            <div class="d-flex justify-content-between py-2 align-items-center px-2">
+                                <h6 class="m-0">My Crazy dog is barking</h6>
+                                <p class=" m-0">09/02</p>
+                            </div>
+
+                            <img src="https://picsum.photos/400" class="img-fluid">
+                            <div class="p-2">
+                                <p class="fw-bold my-0">300likes</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3 border px-0 rounded">
+                            <div class="d-flex justify-content-between py-2 align-items-center px-2">
+                                <h6 class="m-0">My Crazy dog is barking</h6>
+                                <p class=" m-0">09/04</p>
+                            </div>
+
+                            <img src="https://picsum.photos/400" class="img-fluid">
+                            <div class="p-2">
+                                <p class="fw-bold my-0">204 likes</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
                         </div>
                     </div>
                 </div>
